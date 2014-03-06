@@ -7,12 +7,10 @@
 //start function
 (function(){
 
-    console.log("FIGHT!!!");
+    console.log("FIGHT!!!");//for the console print out 
 
-    //player name
-    var playerOneName = "Spiderman";
-    var playerTwoName = "Batman";
-
-    //player damage
-    var player1Damage = 20;
-    var player2Damage = 20;
+    var playerOneName = "Spiderman";//player one name
+    var playerTwoName = "Batman";//player two name
+  
+    var player1Damage = 20;//player health
+    var player2Damage = 20;//player 2 health
