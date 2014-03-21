@@ -39,4 +39,28 @@ document.querySelector("button").onclick = function guessGame(){
 					document.getElementById("output").innerHTML = "Guess my magic number between 1-10 <br/> Guess "+guesses+" - My number is lower than "+num;
 					return false;
 				}else{
-					document.getElementById("output").innerHTML = "WINNER!!!!! "+num+" is correct!!!";
+					document.getElementById("output").innerHTML = "WINNER!!!!! "+num+" is correct!!!";					document.querySelector("button").onclick = "event.cancelBubble = true";
+					document.querySelector("button").innerHTML = "RESET";
+
+
+					document.querySelector("button").onclick = function reset(){
+						window.location.reload();
+					};
+					return false;
+				}
+				return false;
+			}
+		}else{
+			document.getElementById("output").innerHTML = "You've had "+guesses+" guesses - Too Many Guesses, You SUCK!!!!";
+			document.querySelector("button").onclick = "event.cancelBubble = true";
+			document.querySelector("button").innerHTML = "RESET";
+			document.querySelector("button").onclick = function reset(){
+				window.location.reload();
+			};
+			return false;
+		}
+	};		
+	
+
+
+})();
