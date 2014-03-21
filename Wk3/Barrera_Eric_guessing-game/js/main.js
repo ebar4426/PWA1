@@ -14,3 +14,9 @@ var guess = Math.floor(Math.random()*10+1);
 console.log(guess);
 var guesses = 0;
 
+document.querySelector("button").onclick = function guessGame(){
+	//if guess is less than 3 
+		if(guesses<3){
+			
+			var num = document.querySelector("#input").value;
+			
