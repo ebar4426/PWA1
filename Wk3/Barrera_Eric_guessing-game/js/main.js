@@ -27,3 +27,10 @@ document.querySelector("button").onclick = function guessGame(){
 								return false;
 			}else if (num > 10){//if num is greater than 10
 				document.getElementById("output").innerHTML = "Guess my magic number between 1-10 <br/> Guess "+guesses+" - "+num+" is too high!!!!! Try coming down!";
+								return false;
+			}else if (num < 1){//if num is less than 1
+				document.getElementById("output").innerHTML = "Guess my magic number between 1-10 <br/> Guess "+guesses+" - "+num+" is too low!!!!! Try coming up!";
+				return false;
+			}else{
+				if(num < guess){//if num is less than guess 
+					document.getElementById("output").innerHTML = "Guess my magic number between 1-10 <br/> Guess "+guesses+" - My number is higher than "+num;
