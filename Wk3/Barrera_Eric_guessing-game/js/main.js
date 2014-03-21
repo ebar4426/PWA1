@@ -20,3 +20,7 @@ document.querySelector("button").onclick = function guessGame(){
 			
 			var num = document.querySelector("#input").value;
 			
+			guesses++;
+
+			if(num == ""){
+				document.getElementById("output").innerHTML = "Guess my magic number between 1-10 <br/> Guess "+guesses+" - You didn't guess anything!!!!";
